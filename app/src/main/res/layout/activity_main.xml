@@ -1,0 +1,166 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorBackground"
+    tools:context=".MainActivity">
+
+    <ImageView
+        android:id="@+id/header_football"
+        android:layout_width="match_parent"
+        android:layout_height="240dp"
+        android:layout_alignParentTop="true"
+        android:adjustViewBounds="true"
+        android:contentDescription="@null"
+        android:scaleType="centerCrop"
+        android:src="@drawable/logo_football" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/header_football"
+        android:orientation="horizontal">
+
+
+        <LinearLayout
+            android:id="@+id/team_a_side"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+
+            <TextView
+                style="@style/team_text_view"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="sans-serif-medium"
+                android:text="@string/app_teamA" />
+
+
+            <TextView
+                android:id="@+id/team_a_score"
+                style="@style/value_score_text_view"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="sans-serif-medium"
+                android:text="@string/app_score" />
+
+            <Button
+                android:id="@+id/button_touchdown_team_a"
+                style="@style/button_score"
+                android:background="#c0662a"
+                android:onClick="getTouchDownForTeamA"
+                android:text="@string/app_touchdown"
+                app:backgroundTint="#c0662a" />
+
+            <Button
+                android:id="@+id/button_field_goal_team_a"
+                style="@style/button_score"
+                android:background="#c0662a"
+                android:onClick="getFieldGoalForTeamA"
+                android:text="@string/app_fieldGoal"
+                app:backgroundTint="#c0662a" />
+
+
+            <Button
+                android:id="@+id/button_safety_team_a"
+                style="@style/button_score"
+                android:background="#c0662a"
+                android:onClick="getSafetyForTeamA"
+                android:text="@string/app_safety"
+                app:backgroundTint="#c0662a" />
+
+            <Button
+                android:id="@+id/button_two_points_conversion_team_a"
+                style="@style/button_score"
+                android:background="#c0662a"
+                android:onClick="getPointsConversionForTeamA"
+                android:text="@string/app_twoPointsConversion"
+                app:backgroundTint="#c0662a" />
+
+
+        </LinearLayout>
+
+        <View
+            android:layout_width="3dp"
+            android:layout_height="match_parent"
+            android:layout_marginTop="16dp"
+            android:background="@android:color/white" />
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <TextView
+                style="@style/team_text_view"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="sans-serif-medium"
+                android:text="@string/app_teamB" />
+
+
+            <TextView
+                android:id="@+id/team_b_score"
+                style="@style/value_score_text_view"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="sans-serif-medium"
+                android:text="@string/app_score" />
+
+            <Button
+                android:id="@+id/button_touchdown_team_b"
+                style="@style/button_score"
+                android:background="#c0662a"
+                android:onClick="getTouchDownForTeamB"
+                android:text="@string/app_touchdown"
+                app:backgroundTint="#c0662a" />
+
+            <Button
+                android:id="@+id/button_field_goal_team_b"
+                style="@style/button_score"
+                android:background="#c0662a"
+                android:onClick="getFieldGoalForTeamB"
+                android:text="@string/app_fieldGoal"
+                app:backgroundTint="#c0662a" />
+
+
+            <Button
+                android:id="@+id/button_safety_team_b"
+                style="@style/button_score"
+                android:background="#c0662a"
+                android:onClick="getSafetyForTeamB"
+                android:text="@string/app_safety"
+                app:backgroundTint="#c0662a" />
+
+            <Button
+                android:id="@+id/button_two_points_conversion_team_b"
+                style="@style/button_score"
+                android:background="#c0662a"
+                android:onClick="getPointsConversionForTeamB"
+                android:text="@string/app_twoPointsConversion"
+                app:backgroundTint="#c0662a" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/button_reset"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="40dp"
+        android:background="#c0662a"
+        android:onClick="resetScore"
+        android:text="@string/app_reset"
+        android:textColor="@color/white"
+        android:textSize="18sp"
+        app:backgroundTint="#c0662a" />
+
+
+</RelativeLayout>
