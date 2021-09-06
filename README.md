@@ -13,6 +13,4 @@ This app is particular focus on button code, variable scope, and updating views.
 - Properly scoping variables
 - Finding views by their ID
 
-# Image In ReadMe
-
 
