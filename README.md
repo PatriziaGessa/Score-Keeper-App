@@ -3,12 +3,11 @@
 
 
 # Project Overview
-Designing and implementation a single screen app that displays information about a fictional small business using the XML markup language, Views and ViewGroups to display images and text.
+A Score Keeper app, which gives a user the ability to keep track of the score of two different teams playing a game of your choice.
 
 
-# Design include:
-- Business name
-- At least one photo representing the business
-- Two or more other pieces of information, such as: Contact information for the business (eg phone number, email address, website)
-- Address of the Business
-- Description of business
+# Design & functionality include:
+- Adding button code to the app
+- Updating views
+- Properly scoping variables
+- Finding views by their ID
