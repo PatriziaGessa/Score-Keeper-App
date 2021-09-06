@@ -4,6 +4,7 @@
 
 # Project Overview
 A Score Keeper app, which gives a user the ability to keep track of the score of two different teams playing a game of American Football.
+This app is particular focus on button code, variable scope, and updating views.
 
 
 # Design & functionality include:
